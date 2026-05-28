@@ -1,0 +1,17 @@
+{
+  "WARNING": "SYNTHETIC DEMO DATA - NOT A RESULT",
+  "models": {
+    "LinearRegression": {
+      "R2": 0.9525,
+      "RMSE": 0.395
+    },
+    "RandomForest": {
+      "R2": 0.9608,
+      "RMSE": 0.3587
+    },
+    "GradientBoosting": {
+      "R2": 0.9625,
+      "RMSE": 0.351
+    }
+  }
+}

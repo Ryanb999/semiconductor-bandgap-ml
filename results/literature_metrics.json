@@ -1,0 +1,49 @@
+{
+  "note": "Real data, small curated literature dataset. Proof-of-concept scale.",
+  "n_samples": 74,
+  "n_descriptors": 22,
+  "gap_range_eV": [
+    0.15,
+    6.2
+  ],
+  "cross_validation_5fold": {
+    "LinearRegression": {
+      "R2": 0.485,
+      "RMSE_eV": 0.962
+    },
+    "RandomForest": {
+      "R2": 0.514,
+      "RMSE_eV": 0.935
+    },
+    "GradientBoosting": {
+      "R2": 0.392,
+      "RMSE_eV": 1.045
+    }
+  },
+  "single_split_80_20": {
+    "LinearRegression": {
+      "R2": -0.0406,
+      "RMSE": 0.9898
+    },
+    "RandomForest": {
+      "R2": 0.5012,
+      "RMSE": 0.6853
+    },
+    "GradientBoosting": {
+      "R2": 0.4075,
+      "RMSE": 0.7469
+    }
+  },
+  "top_descriptors": [
+    "mass_mean",
+    "Z_mean",
+    "electroneg_std",
+    "radius_mean",
+    "Z_std",
+    "electroneg_mean",
+    "mass_std",
+    "electroneg_range",
+    "valence_mean",
+    "radius_range"
+  ]
+}
